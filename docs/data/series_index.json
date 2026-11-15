@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-11-15T07:21:21Z",
+  "series": [
+    {
+      "id": "le-mans-co2",
+      "place": "Le Mans",
+      "label": "CO₂",
+      "unit": "ppm",
+      "trend_slope_per_day": 0.2065,
+      "recent_slope_per_day": 0.6005,
+      "trend_r2": 0.473,
+      "generated_at": "2026-11-15T07:21:21Z",
+      "file": "data/series_analysis.json",
+      "last_value": 448.67,
+      "last_date": "2026-11-14",
+      "first_date": "2026-08-17"
+    },
+    {
+      "id": "tunis-co2",
+      "place": "Tunis",
+      "label": "CO₂",
+      "unit": "ppm",
+      "trend_slope_per_day": 0.0545,
+      "recent_slope_per_day": 0.2194,
+      "trend_r2": 0.036,
+      "generated_at": "2026-11-15T07:21:21Z",
+      "file": "data/series_analysis_tunis-co2.json",
+      "last_value": 457.08,
+      "last_date": "2026-11-14",
+      "first_date": "2026-08-17"
+    },
+    {
+      "id": "le-mans-pm2_5",
+      "place": "Le Mans",
+      "label": "PM2.5",
+      "unit": "µg/m³",
+      "trend_slope_per_day": 0.0864,
+      "recent_slope_per_day": 0.3126,
+      "trend_r2": 0.401,
+      "generated_at": "2026-11-15T07:21:21Z",
+      "file": "data/series_analysis_le-mans-pm2_5.json",
+      "last_value": 11.95,
+      "last_date": "2026-11-14",
+      "first_date": "2026-08-17"
+    }
+  ]
+}

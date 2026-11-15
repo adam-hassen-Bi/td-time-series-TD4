@@ -1,11 +1,1341 @@
 {
-  "generated_at": "not yet generated",
+  "generated_at": "2026-11-15T07:21:21Z",
+  "id": "le-mans-co2",
+  "place": "Le Mans",
+  "variable": "carbon_dioxide",
+  "label": "CO₂",
   "unit": "ppm",
-  "raw": [],
+  "lat": 48.0061,
+  "lon": 0.1996,
+  "raw": [
+    {
+      "day": 0,
+      "date": "2026-08-17",
+      "value": 435.92,
+      "n_hours": 24
+    },
+    {
+      "day": 1,
+      "date": "2026-08-18",
+      "value": 439.04,
+      "n_hours": 24
+    },
+    {
+      "day": 2,
+      "date": "2026-08-19",
+      "value": 439.79,
+      "n_hours": 24
+    },
+    {
+      "day": 3,
+      "date": "2026-08-20",
+      "value": 432.38,
+      "n_hours": 24
+    },
+    {
+      "day": 4,
+      "date": "2026-08-21",
+      "value": 433.17,
+      "n_hours": 24
+    },
+    {
+      "day": 5,
+      "date": "2026-08-22",
+      "value": 433.83,
+      "n_hours": 24
+    },
+    {
+      "day": 6,
+      "date": "2026-08-23",
+      "value": 431.08,
+      "n_hours": 24
+    },
+    {
+      "day": 7,
+      "date": "2026-08-24",
+      "value": 433.71,
+      "n_hours": 24
+    },
+    {
+      "day": 8,
+      "date": "2026-08-25",
+      "value": 445.04,
+      "n_hours": 24
+    },
+    {
+      "day": 9,
+      "date": "2026-08-26",
+      "value": 440.0,
+      "n_hours": 24
+    },
+    {
+      "day": 10,
+      "date": "2026-08-27",
+      "value": 437.92,
+      "n_hours": 24
+    },
+    {
+      "day": 11,
+      "date": "2026-08-28",
+      "value": 434.0,
+      "n_hours": 24
+    },
+    {
+      "day": 12,
+      "date": "2026-08-29",
+      "value": 432.21,
+      "n_hours": 24
+    },
+    {
+      "day": 13,
+      "date": "2026-08-30",
+      "value": 432.0,
+      "n_hours": 24
+    },
+    {
+      "day": 14,
+      "date": "2026-08-31",
+      "value": 429.17,
+      "n_hours": 24
+    },
+    {
+      "day": 15,
+      "date": "2026-09-01",
+      "value": 432.62,
+      "n_hours": 24
+    },
+    {
+      "day": 16,
+      "date": "2026-09-02",
+      "value": 434.83,
+      "n_hours": 24
+    },
+    {
+      "day": 17,
+      "date": "2026-09-03",
+      "value": 435.62,
+      "n_hours": 24
+    },
+    {
+      "day": 18,
+      "date": "2026-09-04",
+      "value": 438.96,
+      "n_hours": 24
+    },
+    {
+      "day": 19,
+      "date": "2026-09-05",
+      "value": 436.46,
+      "n_hours": 24
+    },
+    {
+      "day": 20,
+      "date": "2026-09-06",
+      "value": 440.21,
+      "n_hours": 24
+    },
+    {
+      "day": 21,
+      "date": "2026-09-07",
+      "value": 442.08,
+      "n_hours": 24
+    },
+    {
+      "day": 22,
+      "date": "2026-09-08",
+      "value": 433.71,
+      "n_hours": 24
+    },
+    {
+      "day": 23,
+      "date": "2026-09-09",
+      "value": 432.67,
+      "n_hours": 24
+    },
+    {
+      "day": 24,
+      "date": "2026-09-10",
+      "value": 439.79,
+      "n_hours": 24
+    },
+    {
+      "day": 25,
+      "date": "2026-09-11",
+      "value": 438.38,
+      "n_hours": 24
+    },
+    {
+      "day": 26,
+      "date": "2026-09-12",
+      "value": 439.83,
+      "n_hours": 24
+    },
+    {
+      "day": 27,
+      "date": "2026-09-13",
+      "value": 447.25,
+      "n_hours": 24
+    },
+    {
+      "day": 28,
+      "date": "2026-09-14",
+      "value": 447.96,
+      "n_hours": 24
+    },
+    {
+      "day": 29,
+      "date": "2026-09-15",
+      "value": 456.25,
+      "n_hours": 24
+    },
+    {
+      "day": 30,
+      "date": "2026-09-16",
+      "value": 433.33,
+      "n_hours": 24
+    },
+    {
+      "day": 31,
+      "date": "2026-09-17",
+      "value": 435.5,
+      "n_hours": 24
+    },
+    {
+      "day": 32,
+      "date": "2026-09-18",
+      "value": 437.25,
+      "n_hours": 24
+    },
+    {
+      "day": 33,
+      "date": "2026-09-19",
+      "value": 437.5,
+      "n_hours": 24
+    },
+    {
+      "day": 34,
+      "date": "2026-09-20",
+      "value": 438.04,
+      "n_hours": 24
+    },
+    {
+      "day": 35,
+      "date": "2026-09-21",
+      "value": 437.62,
+      "n_hours": 24
+    },
+    {
+      "day": 36,
+      "date": "2026-09-22",
+      "value": 442.62,
+      "n_hours": 24
+    },
+    {
+      "day": 37,
+      "date": "2026-09-23",
+      "value": 444.12,
+      "n_hours": 24
+    },
+    {
+      "day": 38,
+      "date": "2026-09-24",
+      "value": 444.25,
+      "n_hours": 24
+    },
+    {
+      "day": 39,
+      "date": "2026-09-25",
+      "value": 448.0,
+      "n_hours": 24
+    },
+    {
+      "day": 40,
+      "date": "2026-09-26",
+      "value": 444.58,
+      "n_hours": 24
+    },
+    {
+      "day": 41,
+      "date": "2026-09-27",
+      "value": 450.25,
+      "n_hours": 24
+    },
+    {
+      "day": 42,
+      "date": "2026-09-28",
+      "value": 448.67,
+      "n_hours": 24
+    },
+    {
+      "day": 43,
+      "date": "2026-09-29",
+      "value": 450.5,
+      "n_hours": 24
+    },
+    {
+      "day": 44,
+      "date": "2026-09-30",
+      "value": 442.58,
+      "n_hours": 24
+    },
+    {
+      "day": 45,
+      "date": "2026-10-01",
+      "value": 440.38,
+      "n_hours": 24
+    },
+    {
+      "day": 46,
+      "date": "2026-10-02",
+      "value": 441.25,
+      "n_hours": 24
+    },
+    {
+      "day": 47,
+      "date": "2026-10-03",
+      "value": 440.83,
+      "n_hours": 24
+    },
+    {
+      "day": 48,
+      "date": "2026-10-04",
+      "value": 445.04,
+      "n_hours": 24
+    },
+    {
+      "day": 49,
+      "date": "2026-10-05",
+      "value": 448.75,
+      "n_hours": 24
+    },
+    {
+      "day": 50,
+      "date": "2026-10-06",
+      "value": 452.79,
+      "n_hours": 24
+    },
+    {
+      "day": 51,
+      "date": "2026-10-07",
+      "value": 451.62,
+      "n_hours": 24
+    },
+    {
+      "day": 52,
+      "date": "2026-10-08",
+      "value": 437.38,
+      "n_hours": 24
+    },
+    {
+      "day": 53,
+      "date": "2026-10-09",
+      "value": 439.0,
+      "n_hours": 24
+    },
+    {
+      "day": 54,
+      "date": "2026-10-10",
+      "value": 437.88,
+      "n_hours": 24
+    },
+    {
+      "day": 55,
+      "date": "2026-10-11",
+      "value": 441.38,
+      "n_hours": 24
+    },
+    {
+      "day": 56,
+      "date": "2026-10-12",
+      "value": 443.33,
+      "n_hours": 24
+    },
+    {
+      "day": 57,
+      "date": "2026-10-13",
+      "value": 442.79,
+      "n_hours": 24
+    },
+    {
+      "day": 58,
+      "date": "2026-10-14",
+      "value": 451.54,
+      "n_hours": 24
+    },
+    {
+      "day": 59,
+      "date": "2026-10-15",
+      "value": 450.21,
+      "n_hours": 24
+    },
+    {
+      "day": 60,
+      "date": "2026-10-16",
+      "value": 444.46,
+      "n_hours": 24
+    },
+    {
+      "day": 61,
+      "date": "2026-10-17",
+      "value": 438.67,
+      "n_hours": 24
+    },
+    {
+      "day": 62,
+      "date": "2026-10-18",
+      "value": 439.42,
+      "n_hours": 24
+    },
+    {
+      "day": 63,
+      "date": "2026-10-19",
+      "value": 446.96,
+      "n_hours": 24
+    },
+    {
+      "day": 64,
+      "date": "2026-10-20",
+      "value": 446.79,
+      "n_hours": 24
+    },
+    {
+      "day": 65,
+      "date": "2026-10-21",
+      "value": 439.0,
+      "n_hours": 24
+    },
+    {
+      "day": 66,
+      "date": "2026-10-22",
+      "value": 438.5,
+      "n_hours": 24
+    },
+    {
+      "day": 67,
+      "date": "2026-10-23",
+      "value": 438.58,
+      "n_hours": 24
+    },
+    {
+      "day": 68,
+      "date": "2026-10-24",
+      "value": 439.17,
+      "n_hours": 24
+    },
+    {
+      "day": 69,
+      "date": "2026-10-25",
+      "value": 439.71,
+      "n_hours": 24
+    },
+    {
+      "day": 70,
+      "date": "2026-10-26",
+      "value": 443.54,
+      "n_hours": 24
+    },
+    {
+      "day": 71,
+      "date": "2026-10-27",
+      "value": 443.88,
+      "n_hours": 24
+    },
+    {
+      "day": 72,
+      "date": "2026-10-28",
+      "value": 453.08,
+      "n_hours": 24
+    },
+    {
+      "day": 73,
+      "date": "2026-10-29",
+      "value": 449.0,
+      "n_hours": 24
+    },
+    {
+      "day": 74,
+      "date": "2026-10-30",
+      "value": 448.21,
+      "n_hours": 24
+    },
+    {
+      "day": 75,
+      "date": "2026-10-31",
+      "value": 448.92,
+      "n_hours": 24
+    },
+    {
+      "day": 76,
+      "date": "2026-11-01",
+      "value": 451.12,
+      "n_hours": 24
+    },
+    {
+      "day": 77,
+      "date": "2026-11-02",
+      "value": 447.5,
+      "n_hours": 24
+    },
+    {
+      "day": 78,
+      "date": "2026-11-03",
+      "value": 447.29,
+      "n_hours": 24
+    },
+    {
+      "day": 79,
+      "date": "2026-11-04",
+      "value": 449.58,
+      "n_hours": 24
+    },
+    {
+      "day": 80,
+      "date": "2026-11-05",
+      "value": 459.46,
+      "n_hours": 24
+    },
+    {
+      "day": 81,
+      "date": "2026-11-06",
+      "value": 470.58,
+      "n_hours": 24
+    },
+    {
+      "day": 82,
+      "date": "2026-11-07",
+      "value": 463.62,
+      "n_hours": 24
+    },
+    {
+      "day": 83,
+      "date": "2026-11-08",
+      "value": 454.33,
+      "n_hours": 24
+    },
+    {
+      "day": 84,
+      "date": "2026-11-09",
+      "value": 451.33,
+      "n_hours": 24
+    },
+    {
+      "day": 85,
+      "date": "2026-11-10",
+      "value": 451.62,
+      "n_hours": 24
+    },
+    {
+      "day": 86,
+      "date": "2026-11-11",
+      "value": 460.29,
+      "n_hours": 24
+    },
+    {
+      "day": 87,
+      "date": "2026-11-12",
+      "value": 455.79,
+      "n_hours": 24
+    },
+    {
+      "day": 88,
+      "date": "2026-11-13",
+      "value": 446.0,
+      "n_hours": 24
+    },
+    {
+      "day": 89,
+      "date": "2026-11-14",
+      "value": 448.67,
+      "n_hours": 24
+    }
+  ],
   "gaps": [],
-  "rolling_mean": [],
-  "exp_smoothed": [],
-  "projection": [],
-  "trend_slope_per_day": 0,
-  "honest_note": ""
+  "incomplete_days": [],
+  "rolling_mean": [
+    {
+      "day": 0,
+      "value": 435.92
+    },
+    {
+      "day": 1,
+      "value": 437.48
+    },
+    {
+      "day": 2,
+      "value": 438.25
+    },
+    {
+      "day": 3,
+      "value": 436.78
+    },
+    {
+      "day": 4,
+      "value": 436.06
+    },
+    {
+      "day": 5,
+      "value": 435.69
+    },
+    {
+      "day": 6,
+      "value": 435.03
+    },
+    {
+      "day": 7,
+      "value": 434.71
+    },
+    {
+      "day": 8,
+      "value": 435.57
+    },
+    {
+      "day": 9,
+      "value": 435.6
+    },
+    {
+      "day": 10,
+      "value": 436.39
+    },
+    {
+      "day": 11,
+      "value": 436.51
+    },
+    {
+      "day": 12,
+      "value": 436.28
+    },
+    {
+      "day": 13,
+      "value": 436.41
+    },
+    {
+      "day": 14,
+      "value": 435.76
+    },
+    {
+      "day": 15,
+      "value": 433.99
+    },
+    {
+      "day": 16,
+      "value": 433.25
+    },
+    {
+      "day": 17,
+      "value": 432.92
+    },
+    {
+      "day": 18,
+      "value": 433.63
+    },
+    {
+      "day": 19,
+      "value": 434.24
+    },
+    {
+      "day": 20,
+      "value": 435.41
+    },
+    {
+      "day": 21,
+      "value": 437.25
+    },
+    {
+      "day": 22,
+      "value": 437.41
+    },
+    {
+      "day": 23,
+      "value": 437.1
+    },
+    {
+      "day": 24,
+      "value": 437.7
+    },
+    {
+      "day": 25,
+      "value": 437.61
+    },
+    {
+      "day": 26,
+      "value": 438.1
+    },
+    {
+      "day": 27,
+      "value": 439.1
+    },
+    {
+      "day": 28,
+      "value": 439.94
+    },
+    {
+      "day": 29,
+      "value": 443.16
+    },
+    {
+      "day": 30,
+      "value": 443.26
+    },
+    {
+      "day": 31,
+      "value": 442.64
+    },
+    {
+      "day": 32,
+      "value": 442.48
+    },
+    {
+      "day": 33,
+      "value": 442.15
+    },
+    {
+      "day": 34,
+      "value": 440.83
+    },
+    {
+      "day": 35,
+      "value": 439.36
+    },
+    {
+      "day": 36,
+      "value": 437.41
+    },
+    {
+      "day": 37,
+      "value": 438.95
+    },
+    {
+      "day": 38,
+      "value": 440.2
+    },
+    {
+      "day": 39,
+      "value": 441.74
+    },
+    {
+      "day": 40,
+      "value": 442.75
+    },
+    {
+      "day": 41,
+      "value": 444.49
+    },
+    {
+      "day": 42,
+      "value": 446.07
+    },
+    {
+      "day": 43,
+      "value": 447.2
+    },
+    {
+      "day": 44,
+      "value": 446.98
+    },
+    {
+      "day": 45,
+      "value": 446.42
+    },
+    {
+      "day": 46,
+      "value": 445.46
+    },
+    {
+      "day": 47,
+      "value": 444.92
+    },
+    {
+      "day": 48,
+      "value": 444.18
+    },
+    {
+      "day": 49,
+      "value": 444.19
+    },
+    {
+      "day": 50,
+      "value": 444.52
+    },
+    {
+      "day": 51,
+      "value": 445.81
+    },
+    {
+      "day": 52,
+      "value": 445.38
+    },
+    {
+      "day": 53,
+      "value": 445.06
+    },
+    {
+      "day": 54,
+      "value": 444.64
+    },
+    {
+      "day": 55,
+      "value": 444.11
+    },
+    {
+      "day": 56,
+      "value": 443.34
+    },
+    {
+      "day": 57,
+      "value": 441.91
+    },
+    {
+      "day": 58,
+      "value": 441.9
+    },
+    {
+      "day": 59,
+      "value": 443.73
+    },
+    {
+      "day": 60,
+      "value": 444.51
+    },
+    {
+      "day": 61,
+      "value": 444.63
+    },
+    {
+      "day": 62,
+      "value": 444.35
+    },
+    {
+      "day": 63,
+      "value": 444.86
+    },
+    {
+      "day": 64,
+      "value": 445.44
+    },
+    {
+      "day": 65,
+      "value": 443.64
+    },
+    {
+      "day": 66,
+      "value": 441.97
+    },
+    {
+      "day": 67,
+      "value": 441.13
+    },
+    {
+      "day": 68,
+      "value": 441.2
+    },
+    {
+      "day": 69,
+      "value": 441.24
+    },
+    {
+      "day": 70,
+      "value": 440.76
+    },
+    {
+      "day": 71,
+      "value": 440.34
+    },
+    {
+      "day": 72,
+      "value": 442.35
+    },
+    {
+      "day": 73,
+      "value": 443.85
+    },
+    {
+      "day": 74,
+      "value": 445.23
+    },
+    {
+      "day": 75,
+      "value": 446.62
+    },
+    {
+      "day": 76,
+      "value": 448.25
+    },
+    {
+      "day": 77,
+      "value": 448.82
+    },
+    {
+      "day": 78,
+      "value": 449.3
+    },
+    {
+      "day": 79,
+      "value": 448.8
+    },
+    {
+      "day": 80,
+      "value": 450.3
+    },
+    {
+      "day": 81,
+      "value": 453.49
+    },
+    {
+      "day": 82,
+      "value": 455.59
+    },
+    {
+      "day": 83,
+      "value": 456.05
+    },
+    {
+      "day": 84,
+      "value": 456.6
+    },
+    {
+      "day": 85,
+      "value": 457.22
+    },
+    {
+      "day": 86,
+      "value": 458.75
+    },
+    {
+      "day": 87,
+      "value": 458.22
+    },
+    {
+      "day": 88,
+      "value": 454.71
+    },
+    {
+      "day": 89,
+      "value": 452.58
+    }
+  ],
+  "exp_smoothed": [
+    {
+      "day": 0,
+      "value": 435.92
+    },
+    {
+      "day": 1,
+      "value": 436.86
+    },
+    {
+      "day": 2,
+      "value": 437.74
+    },
+    {
+      "day": 3,
+      "value": 436.13
+    },
+    {
+      "day": 4,
+      "value": 435.24
+    },
+    {
+      "day": 5,
+      "value": 434.82
+    },
+    {
+      "day": 6,
+      "value": 433.7
+    },
+    {
+      "day": 7,
+      "value": 433.7
+    },
+    {
+      "day": 8,
+      "value": 437.1
+    },
+    {
+      "day": 9,
+      "value": 437.97
+    },
+    {
+      "day": 10,
+      "value": 437.96
+    },
+    {
+      "day": 11,
+      "value": 436.77
+    },
+    {
+      "day": 12,
+      "value": 435.4
+    },
+    {
+      "day": 13,
+      "value": 434.38
+    },
+    {
+      "day": 14,
+      "value": 432.82
+    },
+    {
+      "day": 15,
+      "value": 432.76
+    },
+    {
+      "day": 16,
+      "value": 433.38
+    },
+    {
+      "day": 17,
+      "value": 434.05
+    },
+    {
+      "day": 18,
+      "value": 435.52
+    },
+    {
+      "day": 19,
+      "value": 435.8
+    },
+    {
+      "day": 20,
+      "value": 437.12
+    },
+    {
+      "day": 21,
+      "value": 438.61
+    },
+    {
+      "day": 22,
+      "value": 437.14
+    },
+    {
+      "day": 23,
+      "value": 435.8
+    },
+    {
+      "day": 24,
+      "value": 437.0
+    },
+    {
+      "day": 25,
+      "value": 437.41
+    },
+    {
+      "day": 26,
+      "value": 438.14
+    },
+    {
+      "day": 27,
+      "value": 440.87
+    },
+    {
+      "day": 28,
+      "value": 443.0
+    },
+    {
+      "day": 29,
+      "value": 446.97
+    },
+    {
+      "day": 30,
+      "value": 442.88
+    },
+    {
+      "day": 31,
+      "value": 440.67
+    },
+    {
+      "day": 32,
+      "value": 439.64
+    },
+    {
+      "day": 33,
+      "value": 439.0
+    },
+    {
+      "day": 34,
+      "value": 438.71
+    },
+    {
+      "day": 35,
+      "value": 438.38
+    },
+    {
+      "day": 36,
+      "value": 439.65
+    },
+    {
+      "day": 37,
+      "value": 440.99
+    },
+    {
+      "day": 38,
+      "value": 441.97
+    },
+    {
+      "day": 39,
+      "value": 443.78
+    },
+    {
+      "day": 40,
+      "value": 444.02
+    },
+    {
+      "day": 41,
+      "value": 445.89
+    },
+    {
+      "day": 42,
+      "value": 446.72
+    },
+    {
+      "day": 43,
+      "value": 447.85
+    },
+    {
+      "day": 44,
+      "value": 446.27
+    },
+    {
+      "day": 45,
+      "value": 444.5
+    },
+    {
+      "day": 46,
+      "value": 443.52
+    },
+    {
+      "day": 47,
+      "value": 442.71
+    },
+    {
+      "day": 48,
+      "value": 443.41
+    },
+    {
+      "day": 49,
+      "value": 445.01
+    },
+    {
+      "day": 50,
+      "value": 447.34
+    },
+    {
+      "day": 51,
+      "value": 448.62
+    },
+    {
+      "day": 52,
+      "value": 445.25
+    },
+    {
+      "day": 53,
+      "value": 443.37
+    },
+    {
+      "day": 54,
+      "value": 441.72
+    },
+    {
+      "day": 55,
+      "value": 441.62
+    },
+    {
+      "day": 56,
+      "value": 442.13
+    },
+    {
+      "day": 57,
+      "value": 442.33
+    },
+    {
+      "day": 58,
+      "value": 445.09
+    },
+    {
+      "day": 59,
+      "value": 446.63
+    },
+    {
+      "day": 60,
+      "value": 445.98
+    },
+    {
+      "day": 61,
+      "value": 443.79
+    },
+    {
+      "day": 62,
+      "value": 442.48
+    },
+    {
+      "day": 63,
+      "value": 443.82
+    },
+    {
+      "day": 64,
+      "value": 444.71
+    },
+    {
+      "day": 65,
+      "value": 443.0
+    },
+    {
+      "day": 66,
+      "value": 441.65
+    },
+    {
+      "day": 67,
+      "value": 440.73
+    },
+    {
+      "day": 68,
+      "value": 440.26
+    },
+    {
+      "day": 69,
+      "value": 440.09
+    },
+    {
+      "day": 70,
+      "value": 441.12
+    },
+    {
+      "day": 71,
+      "value": 441.95
+    },
+    {
+      "day": 72,
+      "value": 445.29
+    },
+    {
+      "day": 73,
+      "value": 446.4
+    },
+    {
+      "day": 74,
+      "value": 446.94
+    },
+    {
+      "day": 75,
+      "value": 447.53
+    },
+    {
+      "day": 76,
+      "value": 448.61
+    },
+    {
+      "day": 77,
+      "value": 448.28
+    },
+    {
+      "day": 78,
+      "value": 447.98
+    },
+    {
+      "day": 79,
+      "value": 448.46
+    },
+    {
+      "day": 80,
+      "value": 451.76
+    },
+    {
+      "day": 81,
+      "value": 457.41
+    },
+    {
+      "day": 82,
+      "value": 459.27
+    },
+    {
+      "day": 83,
+      "value": 457.79
+    },
+    {
+      "day": 84,
+      "value": 455.85
+    },
+    {
+      "day": 85,
+      "value": 454.58
+    },
+    {
+      "day": 86,
+      "value": 456.29
+    },
+    {
+      "day": 87,
+      "value": 456.14
+    },
+    {
+      "day": 88,
+      "value": 453.1
+    },
+    {
+      "day": 89,
+      "value": 451.77
+    }
+  ],
+  "projection": [
+    {
+      "day": 90,
+      "date": "2026-11-15",
+      "value": 452.51,
+      "low": 441.02,
+      "high": 464.0
+    },
+    {
+      "day": 91,
+      "date": "2026-11-16",
+      "value": 452.71,
+      "low": 441.22,
+      "high": 464.21
+    },
+    {
+      "day": 92,
+      "date": "2026-11-17",
+      "value": 452.92,
+      "low": 441.42,
+      "high": 464.42
+    },
+    {
+      "day": 93,
+      "date": "2026-11-18",
+      "value": 453.13,
+      "low": 441.61,
+      "high": 464.64
+    },
+    {
+      "day": 94,
+      "date": "2026-11-19",
+      "value": 453.33,
+      "low": 441.81,
+      "high": 464.86
+    },
+    {
+      "day": 95,
+      "date": "2026-11-20",
+      "value": 453.54,
+      "low": 442.01,
+      "high": 465.07
+    },
+    {
+      "day": 96,
+      "date": "2026-11-21",
+      "value": 453.75,
+      "low": 442.21,
+      "high": 465.29
+    }
+  ],
+  "trend_slope_per_day": 0.2065,
+  "trend_intercept": 433.919,
+  "trend_r2": 0.473,
+  "residual_sd": 5.733,
+  "recent_slope_per_day": 0.6005,
+  "recent_days": 30,
+  "params": {
+    "window": 7,
+    "alpha": 0.3,
+    "project_steps": 7
+  },
+  "honest_note": "Projection covers 7 days ahead from 90 days of real history (0 known gap(s) in the source data). CO2 has a well-known yearly cycle: lower in the Northern Hemisphere's growing season, rising again through autumn and winter as vegetation stops absorbing it. A trend measured over one 90-day window must NOT be extrapolated across a season boundary. Trust this projection only a few days out."
 }
