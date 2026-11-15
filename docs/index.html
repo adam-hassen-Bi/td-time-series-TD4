@@ -168,9 +168,12 @@
 
   function render(d) {
     const u = d.unit, raw = d.raw, last = raw[raw.length - 1], P = d.projection;
-    const t = new Date(d.generated_at), age = (Date.now() - t) / 864e5;
-    $('fresh').className = 'badge ' + (age <= 8 ? 'good' : 'warn');
-    $('fresh').textContent = isNaN(t) ? '▲ Not generated yet' : age <= 8 ? '● Updated this week' : `▲ ${fmt(age, 0)} days old — weekly run may have failed`;
+    // Freshness is judged on the last DATA day, not on generated_at: if an extension
+    // fetch fails, the analysis still re-runs on last week's CSV and gets a new
+    // generated_at, which would make stale data look fresh.
+    const t = new Date(d.generated_at), age = (Date.now() - new Date(last.date + 'T23:59:59Z')) / 864e5;
+    $('fresh').className = 'badge ' + (age <= 9 ? 'good' : 'warn');
+    $('fresh').textContent = isNaN(age) ? '▲ Not generated yet' : age <= 9 ? '● Updated this week' : `▲ Data ends ${fmt(age, 0)} days ago — weekly run may have failed`;
     $('updated').textContent = isNaN(t) ? '' : 'Analyzed ' + t.toLocaleString('en-GB', { dateStyle: 'medium', timeStyle: 'short' });
 
     const lastFull = [...raw].reverse().find(r => (r.n_hours ?? 24) >= 24) || last;
