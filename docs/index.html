@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CO₂ Time Series Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #f4f3ef; --surface: #fcfcfb; --border: #e4e2dc; --grid: #ebe9e3;
+    --text: #0b0b0b; --text-2: #52514e; --text-3: #7d7c77;
+    --raw: #7d7c77; --ma: #2a78d6; --exp: #1baf7a; --proj: #eb6834; --band: rgba(235,104,52,.14);
+    --good: #0f7a3a; --good-bg: #e3f3e8; --warn: #8a5a00; --warn-bg: #fdf0d2;
+    --shadow: 0 1px 2px rgba(0,0,0,.04), 0 4px 16px rgba(0,0,0,.04);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #121211; --surface: #1a1a19; --border: #2c2c2a; --grid: #262624;
+      --text: #f0efec; --text-2: #c3c2b7; --text-3: #8e8d86;
+      --raw: #8e8d86; --ma: #3987e5; --exp: #199e70; --proj: #d95926; --band: rgba(217,89,38,.18);
+      --good: #6fd391; --good-bg: #16301f; --warn: #f1c25b; --warn-bg: #352a10; --shadow: none;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #121211; --surface: #1a1a19; --border: #2c2c2a; --grid: #262624;
+    --text: #f0efec; --text-2: #c3c2b7; --text-3: #8e8d86;
+    --raw: #8e8d86; --ma: #3987e5; --exp: #199e70; --proj: #d95926; --band: rgba(217,89,38,.18);
+    --good: #6fd391; --good-bg: #16301f; --warn: #f1c25b; --warn-bg: #352a10; --shadow: none;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.5 Inter, system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 32px 16px 48px; }
+  .num { font-variant-numeric: tabular-nums; }
+  header { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; margin-bottom: 20px; }
+  .eyebrow { font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--text-3); margin: 0 0 6px; }
+  h1 { font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: clamp(28px, 4vw, 40px); line-height: 1.1; margin: 0; letter-spacing: -.01em; }
+  .lede { margin: 8px 0 0; color: var(--text-2); max-width: 680px; }
+  .status { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; font-size: 13px; color: var(--text-3); }
+  .badge { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; padding: 4px 10px; border-radius: 999px; }
+  .badge.good { color: var(--good); background: var(--good-bg); }
+  .badge.warn { color: var(--warn); background: var(--warn-bg); }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 20px; box-shadow: var(--shadow); min-width: 0; }
+  .card h3 { font-size: 15px; font-weight: 600; margin: 0; }
+  .card .sub { font-size: 13px; color: var(--text-3); margin: 2px 0 14px; }
+  .grid { display: grid; gap: 16px; }
+  .kpis { grid-template-columns: repeat(4, minmax(0,1fr)); }
+  .g2 { grid-template-columns: minmax(0,1fr) minmax(0,1fr); }
+  @media (max-width: 880px) { .kpis { grid-template-columns: repeat(2, minmax(0,1fr)); } .g2 { grid-template-columns: 1fr; } }
+  @media (max-width: 460px) { .kpis { grid-template-columns: 1fr; } }
+  .mt { margin-top: 16px; }
+  .kpi .k { font-size: 13px; color: var(--text-3); }
+  .kpi .v { font-size: 28px; font-weight: 700; line-height: 1.15; margin-top: 4px; }
+  .kpi .v small { font-size: 14px; font-weight: 500; color: var(--text-2); }
+  .kpi .d { font-size: 13px; color: var(--text-2); margin-top: 4px; }
+  .pick { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px; }
+  .pick button { font: inherit; font-size: 14px; padding: 7px 14px; border-radius: 999px; border: 1px solid var(--border); background: var(--surface); color: var(--text-2); cursor: pointer; }
+  .pick button.on { background: var(--text); color: var(--surface); border-color: var(--text); }
+  .pick button small { color: inherit; opacity: .7; }
+  .honesty { margin-top: 16px; padding: 14px 18px; border-radius: 12px; background: var(--warn-bg); font-size: 14px; }
+  .honesty b { color: var(--warn); }
+  .legend { display: flex; gap: 6px; font-size: 13px; color: var(--text-2); margin-bottom: 8px; flex-wrap: wrap; }
+  .legend button { font: inherit; font-size: 13px; display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--border); background: transparent; color: var(--text-2); border-radius: 999px; padding: 3px 10px; cursor: pointer; }
+  .legend button.off { opacity: .4; }
+  .legend i { display: inline-block; width: 16px; height: 0; border-top: 2px solid; }
+  .legend i.dot { width: 8px; height: 8px; border: 0; border-radius: 50%; }
+  .legend i.box { width: 14px; height: 10px; border: 0; border-radius: 2px; }
+  svg.chart { width: 100%; height: auto; display: block; overflow: visible; touch-action: pan-y; }
+  svg text { font-family: inherit; font-size: 11px; fill: var(--text-2); }
+  svg .gridline { stroke: var(--grid); }
+  svg .lbl { font-weight: 600; paint-order: stroke; stroke: var(--surface); stroke-width: 3px; }
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { padding: 8px 10px; text-align: right; border-bottom: 1px solid var(--grid); white-space: nowrap; }
+  th:first-child, td:first-child { text-align: left; }
+  th { font-weight: 600; color: var(--text-2); }
+  tbody tr.on { font-weight: 600; }
+  .note { font-size: 13px; color: var(--text-3); margin-top: 10px; }
+  .meter { display: grid; grid-template-columns: 70px 1fr 90px; gap: 10px; align-items: center; font-size: 13px; margin: 6px 0; }
+  .meter .track { height: 10px; background: var(--grid); border-radius: 999px; position: relative; overflow: hidden; }
+  .meter .fill { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 999px; }
+  #tip { position: fixed; pointer-events: none; z-index: 10; background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,.15); padding: 8px 10px; font-size: 13px; opacity: 0; transition: opacity .1s; min-width: 190px; }
+  .tt-row { display: flex; justify-content: space-between; gap: 16px; color: var(--text-2); }
+  .tt-row b { color: var(--text); font-weight: 600; }
+  .tt-row i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
+  .msg { padding: 40px; text-align: center; color: var(--text-2); }
+  footer { margin-top: 28px; font-size: 12px; color: var(--text-3); text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <p class="eyebrow">Time series lab · real data from Open-Meteo Air Quality (CAMS)</p>
+      <h1>How far can a noisy series honestly be projected?</h1>
+      <p class="lede">90 days of real daily air-quality values, cleaned, smoothed two ways, and projected 7 days with a straight line — shown with the uncertainty band the line usually hides.</p>
+    </div>
+    <div class="status"><span class="badge" id="fresh"></span><span class="num" id="updated"></span></div>
+  </header>
+
+  <div class="pick" id="pick" role="tablist" aria-label="Series"></div>
+  <div id="app">
+    <div class="grid kpis" id="kpis"></div>
+    <div class="honesty" id="honesty"></div>
+
+    <section class="card mt">
+      <h3 id="chartTitle"></h3>
+      <p class="sub">Dots = daily means (hollow = day with fewer than 24 hours). Dashed = beyond the observed data; the shaded band is the 95 % prediction interval. Click a legend item to hide it.</p>
+      <div class="legend" id="legend"></div>
+      <svg class="chart" id="chart" role="img" aria-label="Time series chart"></svg>
+    </section>
+
+    <div class="grid g2 mt">
+      <section class="card">
+        <h3>How much should you trust the line?</h3>
+        <p class="sub">Width of the 95 % band at each projected day, against the day-to-day noise.</p>
+        <div id="trust"></div>
+        <p class="note" id="trustNote"></p>
+      </section>
+      <section class="card">
+        <h3>Same pipeline, three series</h3>
+        <p class="sub">Only one line changes in <code>series_config.py</code> for each — place or variable.</p>
+        <div class="table-wrap"><table id="compare"></table></div>
+        <p class="note">90-day vs 30-day slope: when they differ, the series is curving and a straight line through 90 days is already behind.</p>
+      </section>
+    </div>
+  </div>
+  <footer>Weekly GitHub Action: fetch_series.py → analyze_series.py → commit · Data: Open-Meteo Air Quality API (CAMS)</footer>
+</div>
+<div id="tip"></div>
+
+<script>
+(function () {
+  const $ = id => document.getElementById(id);
+  const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const fmt = (v, d = 1) => Number(v).toLocaleString('en-GB', { minimumFractionDigits: d, maximumFractionDigits: d });
+  const sgn = (v, d = 3) => (v >= 0 ? '+' : '−') + fmt(Math.abs(v), d);
+  const tip = $('tip');
+  const get = u => fetch(u, { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).catch(() => null);
+  const shown = { raw: true, ma: true, exp: true, proj: true };
+  let index = [], current = null, cache = {};
+
+  get('data/series_index.json').then(async idx => {
+    index = (idx && idx.series) || [];
+    if (!index.length) {   // first run: only the TD's own file may exist
+      const d = await get('data/series_analysis.json');
+      if (!d || !d.raw || !d.raw.length) { $('app').innerHTML = '<div class="card msg">No analysis yet — run "Update analysis" from the Actions tab.</div>'; return; }
+      index = [{ id: 'le-mans-co2', place: 'Le Mans', label: 'CO₂', unit: d.unit, file: 'data/series_analysis.json' }];
+      cache['le-mans-co2'] = d;
+    }
+    $('pick').innerHTML = index.map((s, i) => `<button role="tab" data-i="${i}">${esc(s.place)} · ${esc(s.label)} <small>${esc(s.unit)}</small></button>`).join('');
+    $('pick').querySelectorAll('button').forEach(b => b.addEventListener('click', () => select(+b.dataset.i)));
+    renderCompare();
+    select(0);
+  });
+
+  async function select(i) {
+    const s = index[i];
+    $('pick').querySelectorAll('button').forEach((b, j) => { b.classList.toggle('on', j === i); b.setAttribute('aria-selected', j === i); });
+    current = cache[s.id] || (cache[s.id] = await get(s.file));
+    if (!current || !current.raw || !current.raw.length) { $('kpis').innerHTML = '<div class="card msg">No data for this series yet.</div>'; return; }
+    render(current);
+    renderCompare(s.id);
+  }
+
+  function render(d) {
+    const u = d.unit, raw = d.raw, last = raw[raw.length - 1], P = d.projection;
+    const t = new Date(d.generated_at), age = (Date.now() - t) / 864e5;
+    $('fresh').className = 'badge ' + (age <= 8 ? 'good' : 'warn');
+    $('fresh').textContent = isNaN(t) ? '▲ Not generated yet' : age <= 8 ? '● Updated this week' : `▲ ${fmt(age, 0)} days old — weekly run may have failed`;
+    $('updated').textContent = isNaN(t) ? '' : 'Analyzed ' + t.toLocaleString('en-GB', { dateStyle: 'medium', timeStyle: 'short' });
+
+    const lastFull = [...raw].reverse().find(r => (r.n_hours ?? 24) >= 24) || last;
+    $('kpis').innerHTML = `
+      <div class="card kpi"><div class="k">Observed days</div><div class="v num">${raw.length}</div><div class="d num">${esc(raw[0].date)} → ${esc(last.date)}</div></div>
+      <div class="card kpi"><div class="k">Gaps detected</div><div class="v num">${d.gaps.length}</div><div class="d">${d.gaps.length ? d.gaps.map(g => esc(g.start_date) + (g.end_date !== g.start_date ? '→' + esc(g.end_date) : '')).join(', ') : 'none in this pull'}${(d.incomplete_days || []).length ? ` · ${d.incomplete_days.length} partial day(s)` : ''}</div></div>
+      <div class="card kpi"><div class="k">Trend per day</div><div class="v num">${sgn(d.trend_slope_per_day)} <small>${esc(u)}</small></div><div class="d num">last ${d.recent_days ?? 30} days: ${d.recent_slope_per_day != null ? sgn(d.recent_slope_per_day) : '—'} · R² ${d.trend_r2 != null ? fmt(d.trend_r2, 2) : '—'}</div></div>
+      <div class="card kpi"><div class="k">Latest complete day</div><div class="v num">${fmt(lastFull.value, 1)} <small>${esc(u)}</small></div><div class="d num">${esc(lastFull.date)}</div></div>`;
+    $('honesty').innerHTML = `<b>Honesty note.</b> ${esc(d.honest_note)}`;
+    $('chartTitle').textContent = `${d.place || 'Le Mans'} · daily ${d.label || 'CO₂'} (${u})`;
+    drawLegend();
+    drawChart(d);
+    drawTrust(d);
+  }
+
+  const SERIES = [
+    ['raw', 'Observed', '--raw', 'dot'], ['ma', 'Rolling mean (7 days)', '--ma', ''],
+    ['exp', 'Exponential smoothing (α 0.3)', '--exp', 'dash'], ['proj', 'Projection + 95 % band', '--proj', 'box'],
+  ];
+  function drawLegend() {
+    $('legend').innerHTML = SERIES.map(([k, l, c, s]) => `<button data-k="${k}" class="${shown[k] ? '' : 'off'}" aria-pressed="${shown[k]}">
+      <i class="${s === 'dot' ? 'dot' : s === 'box' ? 'box' : ''}" style="${s === 'dot' || s === 'box' ? `background:var(${c})` : `border-color:var(${c})${s === 'dash' ? ';border-top-style:dashed' : ''}`}"></i>${l}</button>`).join('');
+    $('legend').querySelectorAll('button').forEach(b => b.addEventListener('click', () => { shown[b.dataset.k] = !shown[b.dataset.k]; drawLegend(); drawChart(current); }));
+  }
+
+  function drawChart(d) {
+    const svg = $('chart');
+    const W = Math.max(340, Math.round(svg.getBoundingClientRect().width) || 900), H = W < 600 ? 300 : 380;
+    const m = { l: 52, r: 16, t: 14, b: 32 }, iw = W - m.l - m.r, ih = H - m.t - m.b;
+    const raw = d.raw, P = d.projection || [], ma = d.rolling_mean || [], ex = d.exp_smoothed || [];
+    const day0 = raw[0].day, day1 = (P.length ? P[P.length - 1].day : raw[raw.length - 1].day);
+    const vals = raw.map(r => r.value).concat(P.flatMap(p => [p.low ?? p.value, p.high ?? p.value]));
+    let lo = Math.min(...vals), hi = Math.max(...vals); const pad = (hi - lo) * 0.08 || 1; lo -= pad; hi += pad;
+    const x = dd => m.l + (dd - day0) / (day1 - day0) * iw, y = v => m.t + (1 - (v - lo) / (hi - lo)) * ih;
+    const dateOf = {}; raw.forEach(r => dateOf[r.day] = r.date); P.forEach(p => dateOf[p.day] = p.date);
+
+    let g = '';
+    // y grid
+    const span = hi - lo, step = [0.5, 1, 2, 5, 10, 20, 50].find(s => span / s <= 6) || 100;
+    for (let v = Math.ceil(lo / step) * step; v <= hi; v += step)
+      g += `<line class="gridline" x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}"/><text x="${m.l - 8}" y="${y(v) + 4}" text-anchor="end" class="num">${fmt(Math.abs(v) < 1e-9 ? 0 : v, step < 1 ? 1 : 0)}</text>`;
+    // x ticks: first of each month + projection start
+    raw.concat(P).forEach(p => { if (p.date.endsWith('-01') || p.day === day0)
+      g += `<text x="${x(p.day)}" y="${H - 10}" text-anchor="middle">${new Date(p.date + 'T00:00').toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}</text>`; });
+    // gaps
+    (d.gaps || []).forEach(gp => { g += `<rect x="${x(gp.start_day - 0.5)}" y="${m.t}" width="${Math.max(2, x(gp.end_day + 0.5) - x(gp.start_day - 0.5))}" height="${ih}" fill="var(--warn-bg)"/>`;
+      g += `<text x="${x((gp.start_day + gp.end_day) / 2)}" y="${m.t + 12}" text-anchor="middle" fill="var(--warn)">gap</text>`; });
+    // "now" divider
+    const lastDay = raw[raw.length - 1].day;
+    g += `<line x1="${x(lastDay)}" x2="${x(lastDay)}" y1="${m.t}" y2="${m.t + ih}" stroke="var(--text-3)" stroke-dasharray="2 3"/>`;
+    g += `<text x="${x(lastDay) + 6}" y="${m.t + 12}" class="lbl" fill="var(--proj)" style="fill:var(--proj)">projection →</text>`;
+
+    const path = pts => pts.map((p, i) => (i && p.day - pts[i - 1].day === 1 ? 'L' : 'M') + x(p.day).toFixed(1) + ',' + y(p.value).toFixed(1)).join('');
+    if (shown.proj && P.length) {
+      const lp = raw[raw.length - 1];
+      const band = [{ day: lp.day, v: lp.value }].concat(P.map(p => ({ day: p.day, v: p.high }))).map(p => `${x(p.day)},${y(p.v)}`).join(' L') +
+        ' L' + P.slice().reverse().map(p => `${x(p.day)},${y(p.low)}`).join(' L') + ` L${x(lp.day)},${y(lp.value)}`;
+      g += `<path d="M${band}Z" fill="var(--band)"/>`;
+      // trend line drawn across the observed window, faint, then the projection solid-dashed
+      if (d.trend_intercept != null) g += `<line x1="${x(day0)}" y1="${y(d.trend_intercept + d.trend_slope_per_day * day0)}" x2="${x(lastDay)}" y2="${y(d.trend_intercept + d.trend_slope_per_day * lastDay)}" stroke="var(--proj)" stroke-width="1" opacity=".45"/>`;
+      g += `<path d="${path(P)}" fill="none" stroke="var(--proj)" stroke-width="2.5" stroke-dasharray="6 4"/>`;
+      P.forEach(p => g += `<circle cx="${x(p.day)}" cy="${y(p.value)}" r="3.5" fill="var(--proj)"/>`);
+    }
+    if (shown.raw) raw.forEach(r => { const part = (r.n_hours ?? 24) < 24;
+      g += `<circle cx="${x(r.day)}" cy="${y(r.value)}" r="${part ? 4 : 2.6}" fill="${part ? 'var(--surface)' : 'var(--raw)'}" stroke="var(--raw)" stroke-width="${part ? 1.5 : 0}" opacity="${part ? 1 : .75}"/>`; });
+    if (shown.ma) g += `<path d="${path(ma)}" fill="none" stroke="var(--ma)" stroke-width="2.2"/>`;
+    if (shown.exp) g += `<path d="${path(ex)}" fill="none" stroke="var(--exp)" stroke-width="1.6" stroke-dasharray="3 3"/>`;
+    g += `<line id="cx" y1="${m.t}" y2="${m.t + ih}" stroke="var(--text-3)" style="display:none"/><rect id="hit" x="${m.l}" y="${m.t}" width="${iw}" height="${ih}" fill="transparent"/>`;
+    svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+    svg.innerHTML = g;
+
+    const by = arr => Object.fromEntries(arr.map(p => [p.day, p]));
+    const R = by(raw), MA = by(ma), EX = by(ex), PJ = by(P);
+    const hit = svg.querySelector('#hit'), cx = svg.querySelector('#cx');
+    const move = e => {
+      const pt = svg.createSVGPoint(); pt.x = e.clientX; pt.y = e.clientY;
+      const lx = pt.matrixTransform(svg.getScreenCTM().inverse()).x;
+      const dd = Math.max(day0, Math.min(day1, Math.round(day0 + (lx - m.l) / iw * (day1 - day0))));
+      cx.setAttribute('x1', x(dd)); cx.setAttribute('x2', x(dd)); cx.style.display = '';
+      const row = (c, l, v) => v == null ? '' : `<div class="tt-row"><span><i style="background:var(${c})"></i>${l}</span><b class="num">${fmt(v, 2)}</b></div>`;
+      tip.innerHTML = `<b>${new Date(dateOf[dd] + 'T00:00').toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' })}</b>` +
+        (R[dd] ? row('--raw', 'Observed' + ((R[dd].n_hours ?? 24) < 24 ? ` (${R[dd].n_hours}/24 h)` : ''), R[dd].value) : '') +
+        (MA[dd] ? row('--ma', 'Rolling mean', MA[dd].value) : '') + (EX[dd] ? row('--exp', 'Exp. smoothing', EX[dd].value) : '') +
+        (PJ[dd] ? row('--proj', 'Projection', PJ[dd].value) + `<div class="tt-row"><span>95 % band</span><b class="num">${fmt(PJ[dd].low, 2)} – ${fmt(PJ[dd].high, 2)}</b></div>` : '') +
+        `<div class="tt-row" style="margin-top:2px"><span>unit</span><b>${esc(d.unit)}</b></div>`;
+      tip.style.opacity = 1; const r = tip.getBoundingClientRect();
+      tip.style.left = (e.clientX + 14 + r.width > innerWidth ? e.clientX - r.width - 14 : e.clientX + 14) + 'px'; tip.style.top = (e.clientY + 14) + 'px';
+    };
+    hit.addEventListener('pointermove', move); hit.addEventListener('pointerleave', () => { tip.style.opacity = 0; cx.style.display = 'none'; });
+  }
+
+  function drawTrust(d) {
+    const P = d.projection || [], u = d.unit;
+    if (!P.length || P[0].high == null) { $('trust').innerHTML = '<p class="note">Band not available for this file.</p>'; return; }
+    const widths = P.map(p => p.high - p.low), mx = Math.max(...widths);
+    const daily = d.residual_sd != null ? 2 * 1.96 * d.residual_sd : null;
+    $('trust').innerHTML = P.map((p, i) => `<div class="meter"><span class="num">day +${i + 1}</span><span class="track"><span class="fill" style="width:${widths[i] / mx * 100}%;background:var(--proj);opacity:${.45 + .55 * i / (P.length - 1 || 1)}"></span></span><span class="num">± ${fmt(widths[i] / 2, 2)} ${esc(u)}</span></div>`).join('');
+    const move7 = Math.abs(d.trend_slope_per_day * P.length);
+    $('trustNote').innerHTML = `Over 7 days the line moves by <b>${fmt(move7, 2)} ${esc(u)}</b>, while the band is <b>± ${fmt(widths[widths.length - 1] / 2, 2)} ${esc(u)}</b> wide: ` +
+      (move7 < widths[widths.length - 1] / 2 ? 'the trend is smaller than the noise, so the projection cannot distinguish "rising" from "flat" a week out.' : 'the trend is larger than the noise over this short horizon.') +
+      ' The band only covers random scatter around a straight line — not a change of season, which no straight line can see.';
+  }
+
+  function renderCompare(activeId) {
+    if (!index.length || index[0].trend_slope_per_day == null) { $('compare').innerHTML = '<tbody><tr><td class="note">Available after the first weekly run.</td></tr></tbody>'; return; }
+    $('compare').innerHTML = `<thead><tr><th>Series</th><th>Latest</th><th>Slope 90 d</th><th>Slope 30 d</th><th>R²</th></tr></thead><tbody>` +
+      index.map(s => `<tr class="${s.id === activeId ? 'on' : ''}"><td>${esc(s.place)} · ${esc(s.label)}</td><td class="num">${fmt(s.last_value, 1)} ${esc(s.unit)}</td>
+        <td class="num">${sgn(s.trend_slope_per_day)}</td><td class="num">${sgn(s.recent_slope_per_day)}</td><td class="num">${fmt(s.trend_r2, 2)}</td></tr>`).join('') + '</tbody>';
+  }
+  let rz; addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => current && drawChart(current), 150); });
+})();
+</script>
+</body>
+</html>
