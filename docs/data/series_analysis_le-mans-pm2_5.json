@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T07:21:21Z",
+  "generated_at": "2026-11-16T14:39:02Z",
   "id": "le-mans-pm2_5",
   "place": "Le Mans",
   "variable": "pm2_5",
@@ -10,542 +10,542 @@
   "raw": [
     {
       "day": 0,
-      "date": "2026-08-17",
-      "value": 5.88,
-      "n_hours": 24
-    },
-    {
-      "day": 1,
       "date": "2026-08-18",
       "value": 4.05,
       "n_hours": 24
     },
     {
-      "day": 2,
+      "day": 1,
       "date": "2026-08-19",
       "value": 3.76,
       "n_hours": 24
     },
     {
-      "day": 3,
+      "day": 2,
       "date": "2026-08-20",
       "value": 4.13,
       "n_hours": 24
     },
     {
-      "day": 4,
+      "day": 3,
       "date": "2026-08-21",
       "value": 3.23,
       "n_hours": 24
     },
     {
-      "day": 5,
+      "day": 4,
       "date": "2026-08-22",
       "value": 4.77,
       "n_hours": 24
     },
     {
-      "day": 6,
+      "day": 5,
       "date": "2026-08-23",
       "value": 4.33,
       "n_hours": 24
     },
     {
-      "day": 7,
+      "day": 6,
       "date": "2026-08-24",
       "value": 4.77,
       "n_hours": 24
     },
     {
-      "day": 8,
+      "day": 7,
       "date": "2026-08-25",
       "value": 4.73,
       "n_hours": 24
     },
     {
-      "day": 9,
+      "day": 8,
       "date": "2026-08-26",
       "value": 4.98,
       "n_hours": 24
     },
     {
-      "day": 10,
+      "day": 9,
       "date": "2026-08-27",
       "value": 3.32,
       "n_hours": 24
     },
     {
-      "day": 11,
+      "day": 10,
       "date": "2026-08-28",
       "value": 2.64,
       "n_hours": 24
     },
     {
-      "day": 12,
+      "day": 11,
       "date": "2026-08-29",
       "value": 3.9,
       "n_hours": 24
     },
     {
-      "day": 13,
+      "day": 12,
       "date": "2026-08-30",
       "value": 4.94,
       "n_hours": 24
     },
     {
-      "day": 14,
+      "day": 13,
       "date": "2026-08-31",
       "value": 4.6,
       "n_hours": 24
     },
     {
-      "day": 15,
+      "day": 14,
       "date": "2026-09-01",
       "value": 4.41,
       "n_hours": 24
     },
     {
-      "day": 16,
+      "day": 15,
       "date": "2026-09-02",
       "value": 5.36,
       "n_hours": 24
     },
     {
-      "day": 17,
+      "day": 16,
       "date": "2026-09-03",
       "value": 4.08,
       "n_hours": 24
     },
     {
-      "day": 18,
+      "day": 17,
       "date": "2026-09-04",
       "value": 3.44,
       "n_hours": 24
     },
     {
-      "day": 19,
+      "day": 18,
       "date": "2026-09-05",
       "value": 4.27,
       "n_hours": 24
     },
     {
-      "day": 20,
+      "day": 19,
       "date": "2026-09-06",
       "value": 4.88,
       "n_hours": 24
     },
     {
-      "day": 21,
+      "day": 20,
       "date": "2026-09-07",
       "value": 5.39,
       "n_hours": 24
     },
     {
-      "day": 22,
+      "day": 21,
       "date": "2026-09-08",
       "value": 3.12,
       "n_hours": 24
     },
     {
-      "day": 23,
+      "day": 22,
       "date": "2026-09-09",
       "value": 4.02,
       "n_hours": 24
     },
     {
-      "day": 24,
+      "day": 23,
       "date": "2026-09-10",
       "value": 5.03,
       "n_hours": 24
     },
     {
-      "day": 25,
+      "day": 24,
       "date": "2026-09-11",
       "value": 4.99,
       "n_hours": 24
     },
     {
-      "day": 26,
+      "day": 25,
       "date": "2026-09-12",
       "value": 4.94,
       "n_hours": 24
     },
     {
-      "day": 27,
+      "day": 26,
       "date": "2026-09-13",
       "value": 5.15,
       "n_hours": 24
     },
     {
-      "day": 28,
+      "day": 27,
       "date": "2026-09-14",
       "value": 5.33,
       "n_hours": 24
     },
     {
-      "day": 29,
+      "day": 28,
       "date": "2026-09-15",
       "value": 5.98,
       "n_hours": 24
     },
     {
-      "day": 30,
+      "day": 29,
       "date": "2026-09-16",
       "value": 3.03,
       "n_hours": 24
     },
     {
-      "day": 31,
+      "day": 30,
       "date": "2026-09-17",
       "value": 4.32,
       "n_hours": 24
     },
     {
-      "day": 32,
+      "day": 31,
       "date": "2026-09-18",
       "value": 6.08,
       "n_hours": 24
     },
     {
-      "day": 33,
+      "day": 32,
       "date": "2026-09-19",
       "value": 7.25,
       "n_hours": 24
     },
     {
-      "day": 34,
+      "day": 33,
       "date": "2026-09-20",
       "value": 5.24,
       "n_hours": 24
     },
     {
-      "day": 35,
+      "day": 34,
       "date": "2026-09-21",
       "value": 7.22,
       "n_hours": 24
     },
     {
-      "day": 36,
+      "day": 35,
       "date": "2026-09-22",
       "value": 7.8,
       "n_hours": 24
     },
     {
-      "day": 37,
+      "day": 36,
       "date": "2026-09-23",
       "value": 6.62,
       "n_hours": 24
     },
     {
-      "day": 38,
+      "day": 37,
       "date": "2026-09-24",
       "value": 7.01,
       "n_hours": 24
     },
     {
-      "day": 39,
+      "day": 38,
       "date": "2026-09-25",
       "value": 5.62,
       "n_hours": 24
     },
     {
-      "day": 40,
+      "day": 39,
       "date": "2026-09-26",
       "value": 6.96,
       "n_hours": 24
     },
     {
-      "day": 41,
+      "day": 40,
       "date": "2026-09-27",
       "value": 7.62,
       "n_hours": 24
     },
     {
-      "day": 42,
+      "day": 41,
       "date": "2026-09-28",
       "value": 6.85,
       "n_hours": 24
     },
     {
-      "day": 43,
+      "day": 42,
       "date": "2026-09-29",
       "value": 5.77,
       "n_hours": 24
     },
     {
-      "day": 44,
+      "day": 43,
       "date": "2026-09-30",
       "value": 4.79,
       "n_hours": 24
     },
     {
-      "day": 45,
+      "day": 44,
       "date": "2026-10-01",
       "value": 4.77,
       "n_hours": 24
     },
     {
-      "day": 46,
+      "day": 45,
       "date": "2026-10-02",
       "value": 5.29,
       "n_hours": 24
     },
     {
-      "day": 47,
+      "day": 46,
       "date": "2026-10-03",
       "value": 6.67,
       "n_hours": 24
     },
     {
-      "day": 48,
+      "day": 47,
       "date": "2026-10-04",
       "value": 9.08,
       "n_hours": 24
     },
     {
-      "day": 49,
+      "day": 48,
       "date": "2026-10-05",
       "value": 13.2,
       "n_hours": 24
     },
     {
-      "day": 50,
+      "day": 49,
       "date": "2026-10-06",
       "value": 11.97,
       "n_hours": 24
     },
     {
-      "day": 51,
+      "day": 50,
       "date": "2026-10-07",
       "value": 5.58,
       "n_hours": 24
     },
     {
-      "day": 52,
+      "day": 51,
       "date": "2026-10-08",
       "value": 3.36,
       "n_hours": 24
     },
     {
-      "day": 53,
+      "day": 52,
       "date": "2026-10-09",
       "value": 4.88,
       "n_hours": 24
     },
     {
-      "day": 54,
+      "day": 53,
       "date": "2026-10-10",
       "value": 4.34,
       "n_hours": 24
     },
     {
-      "day": 55,
+      "day": 54,
       "date": "2026-10-11",
       "value": 7.02,
       "n_hours": 24
     },
     {
-      "day": 56,
+      "day": 55,
       "date": "2026-10-12",
       "value": 5.86,
       "n_hours": 24
     },
     {
-      "day": 57,
+      "day": 56,
       "date": "2026-10-13",
       "value": 5.48,
       "n_hours": 24
     },
     {
-      "day": 58,
+      "day": 57,
       "date": "2026-10-14",
       "value": 7.18,
       "n_hours": 24
     },
     {
-      "day": 59,
+      "day": 58,
       "date": "2026-10-15",
       "value": 6.35,
       "n_hours": 24
     },
     {
-      "day": 60,
+      "day": 59,
       "date": "2026-10-16",
       "value": 5.65,
       "n_hours": 24
     },
     {
-      "day": 61,
+      "day": 60,
       "date": "2026-10-17",
       "value": 5.16,
       "n_hours": 24
     },
     {
-      "day": 62,
+      "day": 61,
       "date": "2026-10-18",
       "value": 5.03,
       "n_hours": 24
     },
     {
-      "day": 63,
+      "day": 62,
       "date": "2026-10-19",
       "value": 7.17,
       "n_hours": 24
     },
     {
-      "day": 64,
+      "day": 63,
       "date": "2026-10-20",
       "value": 7.19,
       "n_hours": 24
     },
     {
-      "day": 65,
+      "day": 64,
       "date": "2026-10-21",
       "value": 3.7,
       "n_hours": 24
     },
     {
-      "day": 66,
+      "day": 65,
       "date": "2026-10-22",
       "value": 4.3,
       "n_hours": 24
     },
     {
-      "day": 67,
+      "day": 66,
       "date": "2026-10-23",
       "value": 2.93,
       "n_hours": 24
     },
     {
-      "day": 68,
+      "day": 67,
       "date": "2026-10-24",
       "value": 4.04,
       "n_hours": 24
     },
     {
-      "day": 69,
+      "day": 68,
       "date": "2026-10-25",
       "value": 4.13,
       "n_hours": 24
     },
     {
-      "day": 70,
+      "day": 69,
       "date": "2026-10-26",
       "value": 5.12,
       "n_hours": 24
     },
     {
-      "day": 71,
+      "day": 70,
       "date": "2026-10-27",
       "value": 5.04,
       "n_hours": 24
     },
     {
-      "day": 72,
+      "day": 71,
       "date": "2026-10-28",
       "value": 7.94,
       "n_hours": 24
     },
     {
-      "day": 73,
+      "day": 72,
       "date": "2026-10-29",
       "value": 9.47,
       "n_hours": 24
     },
     {
-      "day": 74,
+      "day": 73,
       "date": "2026-10-30",
       "value": 13.91,
       "n_hours": 24
     },
     {
-      "day": 75,
+      "day": 74,
       "date": "2026-10-31",
       "value": 14.79,
       "n_hours": 24
     },
     {
-      "day": 76,
+      "day": 75,
       "date": "2026-11-01",
       "value": 14.39,
       "n_hours": 24
     },
     {
-      "day": 77,
+      "day": 76,
       "date": "2026-11-02",
       "value": 15.45,
       "n_hours": 24
     },
     {
-      "day": 78,
+      "day": 77,
       "date": "2026-11-03",
       "value": 11.24,
       "n_hours": 24
     },
     {
-      "day": 79,
+      "day": 78,
       "date": "2026-11-04",
       "value": 13.25,
       "n_hours": 24
     },
     {
-      "day": 80,
+      "day": 79,
       "date": "2026-11-05",
       "value": 15.75,
       "n_hours": 24
     },
     {
-      "day": 81,
+      "day": 80,
       "date": "2026-11-06",
       "value": 19.7,
       "n_hours": 24
     },
     {
-      "day": 82,
+      "day": 81,
       "date": "2026-11-07",
       "value": 15.75,
       "n_hours": 24
     },
     {
-      "day": 83,
+      "day": 82,
       "date": "2026-11-08",
       "value": 12.39,
       "n_hours": 24
     },
     {
-      "day": 84,
+      "day": 83,
       "date": "2026-11-09",
       "value": 12.8,
       "n_hours": 24
     },
     {
-      "day": 85,
+      "day": 84,
       "date": "2026-11-10",
       "value": 7.99,
       "n_hours": 24
     },
     {
-      "day": 86,
+      "day": 85,
       "date": "2026-11-11",
       "value": 10.33,
       "n_hours": 24
     },
     {
-      "day": 87,
+      "day": 86,
       "date": "2026-11-12",
       "value": 8.86,
       "n_hours": 24
     },
     {
-      "day": 88,
+      "day": 87,
       "date": "2026-11-13",
       "value": 6.4,
       "n_hours": 24
     },
     {
-      "day": 89,
+      "day": 88,
       "date": "2026-11-14",
-      "value": 11.95,
+      "value": 12.76,
+      "n_hours": 24
+    },
+    {
+      "day": 89,
+      "date": "2026-11-15",
+      "value": 5.33,
       "n_hours": 24
     }
   ],
@@ -554,409 +554,409 @@
   "rolling_mean": [
     {
       "day": 0,
-      "value": 5.88
+      "value": 4.05
     },
     {
       "day": 1,
-      "value": 4.96
+      "value": 3.9
     },
     {
       "day": 2,
-      "value": 4.56
+      "value": 3.98
     },
     {
       "day": 3,
-      "value": 4.46
+      "value": 3.79
     },
     {
       "day": 4,
-      "value": 4.21
+      "value": 3.99
     },
     {
       "day": 5,
-      "value": 4.3
+      "value": 4.04
     },
     {
       "day": 6,
-      "value": 4.31
-    },
-    {
-      "day": 7,
       "value": 4.15
     },
     {
-      "day": 8,
+      "day": 7,
       "value": 4.25
     },
     {
-      "day": 9,
+      "day": 8,
       "value": 4.42
     },
     {
-      "day": 10,
+      "day": 9,
       "value": 4.3
     },
     {
-      "day": 11,
+      "day": 10,
       "value": 4.22
     },
     {
-      "day": 12,
+      "day": 11,
       "value": 4.1
     },
     {
-      "day": 13,
+      "day": 12,
       "value": 4.18
     },
     {
-      "day": 14,
+      "day": 13,
       "value": 4.16
     },
     {
-      "day": 15,
+      "day": 14,
       "value": 4.11
     },
     {
-      "day": 16,
+      "day": 15,
       "value": 4.17
     },
     {
-      "day": 17,
+      "day": 16,
       "value": 4.28
     },
     {
-      "day": 18,
+      "day": 17,
       "value": 4.39
     },
     {
-      "day": 19,
+      "day": 18,
       "value": 4.44
     },
     {
-      "day": 20,
+      "day": 19,
       "value": 4.43
     },
     {
-      "day": 21,
+      "day": 20,
       "value": 4.55
     },
     {
-      "day": 22,
+      "day": 21,
       "value": 4.36
     },
     {
-      "day": 23,
+      "day": 22,
       "value": 4.17
     },
     {
-      "day": 24,
+      "day": 23,
       "value": 4.31
     },
     {
-      "day": 25,
+      "day": 24,
       "value": 4.53
     },
     {
-      "day": 26,
+      "day": 25,
       "value": 4.62
     },
     {
-      "day": 27,
+      "day": 26,
       "value": 4.66
     },
     {
-      "day": 28,
+      "day": 27,
       "value": 4.65
     },
     {
-      "day": 29,
+      "day": 28,
       "value": 5.06
     },
     {
-      "day": 30,
+      "day": 29,
       "value": 4.92
     },
     {
-      "day": 31,
+      "day": 30,
       "value": 4.82
     },
     {
-      "day": 32,
+      "day": 31,
       "value": 4.98
     },
     {
-      "day": 33,
+      "day": 32,
       "value": 5.31
     },
     {
-      "day": 34,
+      "day": 33,
       "value": 5.32
     },
     {
-      "day": 35,
+      "day": 34,
       "value": 5.59
     },
     {
-      "day": 36,
+      "day": 35,
       "value": 5.85
     },
     {
-      "day": 37,
+      "day": 36,
       "value": 6.36
     },
     {
-      "day": 38,
+      "day": 37,
       "value": 6.75
     },
     {
-      "day": 39,
+      "day": 38,
       "value": 6.68
     },
     {
-      "day": 40,
+      "day": 39,
       "value": 6.64
     },
     {
-      "day": 41,
+      "day": 40,
       "value": 6.98
     },
     {
-      "day": 42,
+      "day": 41,
       "value": 6.93
     },
     {
-      "day": 43,
+      "day": 42,
       "value": 6.64
     },
     {
-      "day": 44,
+      "day": 43,
       "value": 6.37
     },
     {
-      "day": 45,
+      "day": 44,
       "value": 6.05
     },
     {
-      "day": 46,
+      "day": 45,
       "value": 6.01
     },
     {
-      "day": 47,
+      "day": 46,
       "value": 5.97
     },
     {
-      "day": 48,
+      "day": 47,
       "value": 6.17
     },
     {
-      "day": 49,
+      "day": 48,
       "value": 7.08
     },
     {
-      "day": 50,
+      "day": 49,
       "value": 7.97
     },
     {
-      "day": 51,
+      "day": 50,
       "value": 8.08
     },
     {
-      "day": 52,
+      "day": 51,
       "value": 7.88
     },
     {
-      "day": 53,
+      "day": 52,
       "value": 7.82
     },
     {
-      "day": 54,
+      "day": 53,
       "value": 7.49
     },
     {
-      "day": 55,
+      "day": 54,
       "value": 7.19
     },
     {
-      "day": 56,
+      "day": 55,
       "value": 6.14
     },
     {
-      "day": 57,
+      "day": 56,
       "value": 5.22
     },
     {
-      "day": 58,
+      "day": 57,
       "value": 5.45
     },
     {
-      "day": 59,
+      "day": 58,
       "value": 5.87
     },
     {
-      "day": 60,
+      "day": 59,
       "value": 5.98
     },
     {
-      "day": 61,
+      "day": 60,
       "value": 6.1
     },
     {
-      "day": 62,
+      "day": 61,
       "value": 5.82
     },
     {
-      "day": 63,
+      "day": 62,
       "value": 6.0
     },
     {
-      "day": 64,
+      "day": 63,
       "value": 6.25
     },
     {
-      "day": 65,
+      "day": 64,
       "value": 5.75
     },
     {
-      "day": 66,
+      "day": 65,
       "value": 5.46
     },
     {
-      "day": 67,
+      "day": 66,
       "value": 5.07
     },
     {
-      "day": 68,
+      "day": 67,
       "value": 4.91
     },
     {
-      "day": 69,
+      "day": 68,
       "value": 4.78
     },
     {
-      "day": 70,
+      "day": 69,
       "value": 4.49
     },
     {
-      "day": 71,
+      "day": 70,
       "value": 4.18
     },
     {
-      "day": 72,
+      "day": 71,
       "value": 4.79
     },
     {
-      "day": 73,
+      "day": 72,
       "value": 5.52
     },
     {
-      "day": 74,
+      "day": 73,
       "value": 7.09
     },
     {
-      "day": 75,
+      "day": 74,
       "value": 8.63
     },
     {
-      "day": 76,
+      "day": 75,
       "value": 10.09
     },
     {
-      "day": 77,
+      "day": 76,
       "value": 11.57
     },
     {
-      "day": 78,
+      "day": 77,
       "value": 12.46
     },
     {
-      "day": 79,
+      "day": 78,
       "value": 13.21
     },
     {
-      "day": 80,
+      "day": 79,
       "value": 14.11
     },
     {
-      "day": 81,
+      "day": 80,
       "value": 14.94
     },
     {
-      "day": 82,
+      "day": 81,
       "value": 15.08
     },
     {
-      "day": 83,
+      "day": 82,
       "value": 14.79
     },
     {
-      "day": 84,
+      "day": 83,
       "value": 14.41
     },
     {
-      "day": 85,
+      "day": 84,
       "value": 13.95
     },
     {
-      "day": 86,
+      "day": 85,
       "value": 13.53
     },
     {
-      "day": 87,
+      "day": 86,
       "value": 12.55
     },
     {
-      "day": 88,
+      "day": 87,
       "value": 10.65
     },
     {
+      "day": 88,
+      "value": 10.22
+    },
+    {
       "day": 89,
-      "value": 10.1
+      "value": 9.21
     }
   ],
   "exp_smoothed": [
     {
       "day": 0,
-      "value": 5.88
+      "value": 4.05
     },
     {
       "day": 1,
-      "value": 5.33
+      "value": 3.96
     },
     {
       "day": 2,
-      "value": 4.86
+      "value": 4.01
     },
     {
       "day": 3,
-      "value": 4.64
+      "value": 3.78
     },
     {
       "day": 4,
-      "value": 4.22
+      "value": 4.08
     },
     {
       "day": 5,
-      "value": 4.38
+      "value": 4.15
     },
     {
       "day": 6,
-      "value": 4.37
+      "value": 4.34
     },
     {
       "day": 7,
-      "value": 4.49
+      "value": 4.46
     },
     {
       "day": 8,
-      "value": 4.56
+      "value": 4.62
     },
     {
       "day": 9,
-      "value": 4.69
+      "value": 4.23
     },
     {
       "day": 10,
-      "value": 4.28
+      "value": 3.75
     },
     {
       "day": 11,
@@ -964,373 +964,373 @@
     },
     {
       "day": 12,
-      "value": 3.82
+      "value": 4.13
     },
     {
       "day": 13,
-      "value": 4.16
+      "value": 4.27
     },
     {
       "day": 14,
-      "value": 4.29
+      "value": 4.31
     },
     {
       "day": 15,
-      "value": 4.33
+      "value": 4.62
     },
     {
       "day": 16,
-      "value": 4.64
+      "value": 4.46
     },
     {
       "day": 17,
-      "value": 4.47
+      "value": 4.15
     },
     {
       "day": 18,
-      "value": 4.16
-    },
-    {
-      "day": 19,
       "value": 4.19
     },
     {
-      "day": 20,
+      "day": 19,
       "value": 4.4
     },
     {
-      "day": 21,
+      "day": 20,
       "value": 4.7
     },
     {
-      "day": 22,
+      "day": 21,
       "value": 4.23
     },
     {
-      "day": 23,
+      "day": 22,
       "value": 4.17
     },
     {
-      "day": 24,
+      "day": 23,
       "value": 4.43
     },
     {
-      "day": 25,
+      "day": 24,
       "value": 4.6
+    },
+    {
+      "day": 25,
+      "value": 4.7
     },
     {
       "day": 26,
-      "value": 4.7
-    },
-    {
-      "day": 27,
       "value": 4.83
     },
     {
-      "day": 28,
+      "day": 27,
       "value": 4.98
     },
     {
-      "day": 29,
+      "day": 28,
       "value": 5.28
     },
     {
-      "day": 30,
+      "day": 29,
       "value": 4.6
     },
     {
-      "day": 31,
+      "day": 30,
       "value": 4.52
     },
     {
-      "day": 32,
+      "day": 31,
       "value": 4.99
     },
     {
-      "day": 33,
+      "day": 32,
       "value": 5.67
     },
     {
-      "day": 34,
+      "day": 33,
       "value": 5.54
     },
     {
-      "day": 35,
+      "day": 34,
       "value": 6.04
     },
     {
-      "day": 36,
+      "day": 35,
       "value": 6.57
     },
     {
-      "day": 37,
+      "day": 36,
       "value": 6.58
     },
     {
-      "day": 38,
+      "day": 37,
       "value": 6.71
     },
     {
-      "day": 39,
+      "day": 38,
       "value": 6.38
     },
     {
-      "day": 40,
+      "day": 39,
       "value": 6.55
     },
     {
-      "day": 41,
+      "day": 40,
       "value": 6.87
     },
     {
-      "day": 42,
+      "day": 41,
       "value": 6.86
     },
     {
-      "day": 43,
+      "day": 42,
       "value": 6.53
     },
     {
-      "day": 44,
+      "day": 43,
       "value": 6.01
     },
     {
-      "day": 45,
+      "day": 44,
       "value": 5.64
     },
     {
-      "day": 46,
+      "day": 45,
       "value": 5.53
     },
     {
-      "day": 47,
+      "day": 46,
       "value": 5.87
     },
     {
-      "day": 48,
+      "day": 47,
       "value": 6.83
     },
     {
-      "day": 49,
+      "day": 48,
       "value": 8.74
     },
     {
-      "day": 50,
+      "day": 49,
       "value": 9.71
     },
     {
-      "day": 51,
+      "day": 50,
       "value": 8.47
     },
     {
-      "day": 52,
+      "day": 51,
       "value": 6.94
     },
     {
-      "day": 53,
+      "day": 52,
       "value": 6.32
     },
     {
-      "day": 54,
+      "day": 53,
       "value": 5.73
     },
     {
-      "day": 55,
+      "day": 54,
       "value": 6.12
     },
     {
-      "day": 56,
+      "day": 55,
       "value": 6.04
     },
     {
-      "day": 57,
+      "day": 56,
       "value": 5.87
     },
     {
-      "day": 58,
+      "day": 57,
       "value": 6.26
     },
     {
-      "day": 59,
+      "day": 58,
       "value": 6.29
     },
     {
-      "day": 60,
+      "day": 59,
       "value": 6.1
     },
     {
-      "day": 61,
+      "day": 60,
       "value": 5.82
     },
     {
-      "day": 62,
+      "day": 61,
       "value": 5.58
     },
     {
-      "day": 63,
+      "day": 62,
       "value": 6.06
     },
     {
-      "day": 64,
+      "day": 63,
       "value": 6.4
     },
     {
-      "day": 65,
+      "day": 64,
       "value": 5.59
     },
     {
-      "day": 66,
+      "day": 65,
       "value": 5.2
     },
     {
-      "day": 67,
+      "day": 66,
       "value": 4.52
     },
     {
-      "day": 68,
+      "day": 67,
       "value": 4.38
     },
     {
-      "day": 69,
+      "day": 68,
       "value": 4.3
     },
     {
-      "day": 70,
+      "day": 69,
       "value": 4.55
     },
     {
-      "day": 71,
+      "day": 70,
       "value": 4.7
     },
     {
-      "day": 72,
+      "day": 71,
       "value": 5.67
     },
     {
-      "day": 73,
+      "day": 72,
       "value": 6.81
     },
     {
-      "day": 74,
+      "day": 73,
       "value": 8.94
     },
     {
-      "day": 75,
+      "day": 74,
       "value": 10.69
     },
     {
-      "day": 76,
+      "day": 75,
       "value": 11.8
     },
     {
-      "day": 77,
+      "day": 76,
       "value": 12.89
     },
     {
-      "day": 78,
+      "day": 77,
       "value": 12.39
     },
     {
-      "day": 79,
+      "day": 78,
       "value": 12.65
     },
     {
-      "day": 80,
+      "day": 79,
       "value": 13.58
     },
     {
-      "day": 81,
+      "day": 80,
       "value": 15.42
     },
     {
-      "day": 82,
+      "day": 81,
       "value": 15.52
     },
     {
-      "day": 83,
+      "day": 82,
       "value": 14.58
     },
     {
-      "day": 84,
+      "day": 83,
       "value": 14.05
     },
     {
-      "day": 85,
+      "day": 84,
       "value": 12.23
     },
     {
-      "day": 86,
+      "day": 85,
       "value": 11.66
     },
     {
-      "day": 87,
+      "day": 86,
       "value": 10.82
     },
     {
-      "day": 88,
+      "day": 87,
       "value": 9.49
     },
     {
+      "day": 88,
+      "value": 10.47
+    },
+    {
       "day": 89,
-      "value": 10.23
+      "value": 8.93
     }
   ],
   "projection": [
     {
       "day": 90,
-      "date": "2026-11-15",
-      "value": 10.7,
-      "low": 5.14,
-      "high": 16.27
+      "date": "2026-11-16",
+      "value": 10.66,
+      "low": 5.0,
+      "high": 16.31
     },
     {
       "day": 91,
-      "date": "2026-11-16",
-      "value": 10.79,
-      "low": 5.22,
-      "high": 16.36
+      "date": "2026-11-17",
+      "value": 10.74,
+      "low": 5.08,
+      "high": 16.4
     },
     {
       "day": 92,
-      "date": "2026-11-17",
-      "value": 10.88,
-      "low": 5.31,
-      "high": 16.45
+      "date": "2026-11-18",
+      "value": 10.83,
+      "low": 5.16,
+      "high": 16.49
     },
     {
       "day": 93,
-      "date": "2026-11-18",
-      "value": 10.96,
-      "low": 5.39,
-      "high": 16.54
+      "date": "2026-11-19",
+      "value": 10.91,
+      "low": 5.24,
+      "high": 16.58
     },
     {
       "day": 94,
-      "date": "2026-11-19",
-      "value": 11.05,
-      "low": 5.47,
-      "high": 16.63
+      "date": "2026-11-20",
+      "value": 11.0,
+      "low": 5.33,
+      "high": 16.67
     },
     {
       "day": 95,
-      "date": "2026-11-20",
-      "value": 11.14,
-      "low": 5.55,
-      "high": 16.72
+      "date": "2026-11-21",
+      "value": 11.08,
+      "low": 5.41,
+      "high": 16.76
     },
     {
       "day": 96,
-      "date": "2026-11-21",
-      "value": 11.22,
-      "low": 5.63,
-      "high": 16.81
+      "date": "2026-11-22",
+      "value": 11.17,
+      "low": 5.49,
+      "high": 16.85
     }
   ],
-  "trend_slope_per_day": 0.0864,
-  "trend_intercept": 2.925,
-  "trend_r2": 0.401,
-  "residual_sd": 2.777,
-  "recent_slope_per_day": 0.3126,
+  "trend_slope_per_day": 0.0853,
+  "trend_intercept": 2.979,
+  "trend_r2": 0.387,
+  "residual_sd": 2.822,
+  "recent_slope_per_day": 0.2655,
   "recent_days": 30,
   "params": {
     "window": 7,
