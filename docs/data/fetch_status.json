@@ -1,26 +1,26 @@
 {
-  "fetched_at": "2026-11-16T14:39:02Z",
+  "fetched_at": "2026-11-23T17:16:04Z",
   "series": {
     "le-mans-co2": {
       "ok": true,
       "days": 90,
       "incomplete_days": 0,
-      "first_date": "2026-08-18",
-      "last_date": "2026-11-15"
+      "first_date": "2026-08-25",
+      "last_date": "2026-11-22"
     },
     "tunis-co2": {
       "ok": true,
       "days": 90,
       "incomplete_days": 0,
-      "first_date": "2026-08-18",
-      "last_date": "2026-11-15"
+      "first_date": "2026-08-25",
+      "last_date": "2026-11-22"
     },
     "le-mans-pm2_5": {
       "ok": true,
       "days": 90,
       "incomplete_days": 0,
-      "first_date": "2026-08-18",
-      "last_date": "2026-11-15"
+      "first_date": "2026-08-25",
+      "last_date": "2026-11-22"
     }
   }
 }

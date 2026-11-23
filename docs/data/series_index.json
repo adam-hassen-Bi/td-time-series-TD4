@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-11-16T14:39:02Z",
+  "generated_at": "2026-11-23T17:16:04Z",
   "series": [
     {
       "id": "le-mans-co2",
       "place": "Le Mans",
       "label": "CO₂",
       "unit": "ppm",
-      "trend_slope_per_day": 0.2034,
-      "recent_slope_per_day": 0.5572,
-      "trend_r2": 0.462,
-      "generated_at": "2026-11-16T14:39:02Z",
+      "trend_slope_per_day": 0.1665,
+      "recent_slope_per_day": 0.0243,
+      "trend_r2": 0.345,
+      "generated_at": "2026-11-23T17:16:04Z",
       "file": "data/series_analysis.json",
-      "last_value": 446.12,
-      "last_date": "2026-11-15",
-      "first_date": "2026-08-18"
+      "last_value": 446.58,
+      "last_date": "2026-11-22",
+      "first_date": "2026-08-25"
     },
     {
       "id": "tunis-co2",
       "place": "Tunis",
       "label": "CO₂",
       "unit": "ppm",
-      "trend_slope_per_day": 0.0655,
-      "recent_slope_per_day": 0.3642,
-      "trend_r2": 0.051,
-      "generated_at": "2026-11-16T14:39:02Z",
+      "trend_slope_per_day": 0.1151,
+      "recent_slope_per_day": 0.4996,
+      "trend_r2": 0.131,
+      "generated_at": "2026-11-23T17:16:04Z",
       "file": "data/series_analysis_tunis-co2.json",
-      "last_value": 462.54,
-      "last_date": "2026-11-15",
-      "first_date": "2026-08-18"
+      "last_value": 456.79,
+      "last_date": "2026-11-22",
+      "first_date": "2026-08-25"
     },
     {
       "id": "le-mans-pm2_5",
       "place": "Le Mans",
       "label": "PM2.5",
       "unit": "µg/m³",
-      "trend_slope_per_day": 0.0853,
-      "recent_slope_per_day": 0.2655,
-      "trend_r2": 0.387,
-      "generated_at": "2026-11-16T14:39:02Z",
+      "trend_slope_per_day": 0.0601,
+      "recent_slope_per_day": -0.1499,
+      "trend_r2": 0.191,
+      "generated_at": "2026-11-23T17:16:04Z",
       "file": "data/series_analysis_le-mans-pm2_5.json",
-      "last_value": 5.33,
-      "last_date": "2026-11-15",
-      "first_date": "2026-08-18"
+      "last_value": 3.32,
+      "last_date": "2026-11-22",
+      "first_date": "2026-08-25"
     }
   ]
 }
